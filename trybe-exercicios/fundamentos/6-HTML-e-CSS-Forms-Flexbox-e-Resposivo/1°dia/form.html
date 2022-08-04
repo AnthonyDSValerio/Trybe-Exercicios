@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>TrybeTrip</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <h1>Header da página</h1>
+      <div style="border: 2px solid black;">
+        <br>
+        <label for="input-nome">Nome:
+          <input type="text" id="input-nome" name="nome" minlength="10" maxlength="40" required>
+          <br><br>
+        </label>
+
+        <label for="input-email">Email:
+          <input type="text" id="input-email" name="email" minlength="10" maxlength="50" required>
+          <br><br>
+        </label>
+        
+        <label for="option1">
+          <input type="radio" id="option1" name="option">Cidade
+        </label>
+        <label for="option2">
+          <input type="radio" id="option2" name="option">Campo
+        </label>
+        <label for="option3">
+          <input type="radio" id="option3" name="option">Praia
+        </label>
+        <label for="option4">
+          <input type="radio" id="option4" name="option">Montanhas
+        </label>
+        <br>
+
+        <label for="resposta">
+          <p>Espaço para digitar a resposta:</p>
+          <textarea name="resposta" id="resposta" cols="30" rows="10"></textarea>
+        </label>
+        <br><br>
+
+        <label for="">Data:
+          <input type="date" id="input-data" name="data" required>
+        </label>
+        <br><br>
+
+        <label for="concorda1">Concordo 1
+          <input type="checkbox" name="concorda1" id="concorda1" required>
+        </label>
+        <br>
+        <label for="concorda2">Concordo 2
+          <input type="checkbox" name="concorda2" id="concorda2" required>
+        </label>
+      </div>
+      <br>
+      <button type="submit">Enviar</button>
+      <button type="reset">Apagar</button>
+    </form>
+    <script></script>
+  </body>
+</html>
