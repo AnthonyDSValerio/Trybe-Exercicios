@@ -62,3 +62,16 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
+
+const expectedResult = 43;
+
+function averageAge() {
+  // escreva seu código aqui
+  const numeroDeAutores = books.length;
+  const somaDasIdades = books.reduce((acc, curr) => 
+  (acc + (curr.releaseYear - curr.author.birthYear)
+  ), 0);
+  return somaDasIdades / numeroDeAutores;
+}
+
+console.log(averageAge());
