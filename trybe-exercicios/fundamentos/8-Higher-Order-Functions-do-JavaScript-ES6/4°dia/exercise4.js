@@ -63,15 +63,26 @@ const books = [
 
 // Adicione o código do exercício aqui:
 
-const expectedResult = 43;
 
-function averageAge() {
+const expectedResult = {
+  id: 1,
+  name: 'As Crônicas de Gelo e Fogo',
+  genre: 'Fantasia',
+  author: {
+    name: 'George R. R. Martin',
+    birthYear: 1948,
+  },
+  releaseYear: 1991,
+};
+
+function longestNamedBook() {
   // escreva seu código aqui
-  const numeroDeAutores = books.length;
-  const somaDasIdades = books.reduce((acc, curr) => 
-  (acc + (curr.releaseYear - curr.author.birthYear)
-  ), 0);
-  return somaDasIdades / numeroDeAutores;
+  return books.reduce((biggersBook, currentBook) => {
+    if (currentBook.name.length > biggersBook.name.length) {
+      return currentBook;
+    }
+    return biggersBook;
+  });
 }
 
-console.log(averageAge());
+console.log(longestNamedBook());
